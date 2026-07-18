@@ -19,7 +19,9 @@ export default function FavoritePerson() {
   const imageY = useTransform(scrollYProgress, [0, 1], [0, -24]);
   const secondaryImageY = useTransform(scrollYProgress, [0, 1], [24, -12]);
 
-  const favoriteImages = config.favoritePerson.images ?? [config.favoritePerson.image];
+  const favoriteImages = config.favoritePerson.images?.length
+    ? config.favoritePerson.images
+    : [config.favoritePerson.image ?? '/images/5.jpeg'];
 
   return (
     <section ref={ref} className="relative h-[300vh] bg-[#ffe4ec]">
