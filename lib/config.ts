@@ -100,7 +100,7 @@ export const config = {
 
   // --- Section 5: My Favorite Person ---------------------------------------
   favoritePerson: {
-    images: ['/images/2.jpeg', '/images/8.jpeg'],
+    images: ['/images/5.jpeg', '/images/8.jpeg'],
     lines: [
       "Maybe you don't see yourself the way I see you.",
       'But if you could...',
